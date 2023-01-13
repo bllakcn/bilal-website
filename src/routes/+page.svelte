@@ -10,9 +10,9 @@
   const motto = '{/*Tech Enthusiast*/}'
 </script>
 
-<div class="wrapper">
-  <header>
-    <img src={profile} alt="profile">
+<div class="flex flex-col justify-center items-center">
+  <header class="text-stone-200 flex justify-center items-center">
+    <img class="w-96 h-auto" src={profile} alt="profile">
     <div>
       <span>Hi!</span>
       <h1>A. Bilal Akcan</h1>
@@ -29,20 +29,4 @@
 </div>
 
 <style>
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  header {
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  img {
-    width: 400px;
-    height: auto;
-  }
 </style>
