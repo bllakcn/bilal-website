@@ -37,7 +37,7 @@
     <div class="text-center lg:text-left lg:mx-32">
       <span class="mb-4 text-3xl tracking-wider text-transparent bg-clip-text bg-gradient-to-b from-stone-400 via-stone -400 to-transparent">Hi!</span>
       <h1 class='text-5xl text-stone-300 mb-4 lg:mb-3'>A. <span class='font-extrabold text-stone-200'>Bilal</span> Akcan</h1>
-      <h3 class='p-0 mb-2 tracking-widest text-2xl font-bold text-stone-300'>UI/UX <span class='text-3xl font-black text-transparent bg-clip-text bg-gradient-to-br from-cyan-300 to-indigo-900'>Engineer</span></h3>
+      <h2 class='p-0 mb-2 tracking-widest text-2xl font-bold text-stone-300'>UI/UX <span class='text-3xl font-black text-transparent bg-clip-text bg-gradient-to-br from-cyan-300 to-indigo-900'>Engineer</span></h2>
       <span class="p-0 m-0 tracking-wide text-l font-mono select-none text-stone-500">{motto}</span>
     </div>
     <button on:click={scrollByArrow} class="fill-stone-500 cursor-pointer p-1 absolute bottom-2 w-8" >
@@ -51,6 +51,9 @@
     <Contact/>
   </main>
   <Navbar scrolled={scrolled} />
+  <footer class="text-center text-stone-500 select-none">
+    <span>© 2022 Ahmet Bilal Akcan</span>
+  </footer>
 </div>
 
 <style>
@@ -64,8 +67,5 @@
   svg {
     transition: all .5s;
     opacity: 1;
-  }
-  svg.scrolled {
-    opacity: 0;
   }
 </style>

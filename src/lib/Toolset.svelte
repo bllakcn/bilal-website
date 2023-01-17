@@ -33,7 +33,7 @@ const contentSkills = [
 </script>
 
 <section id="toolset" class='bg-black text-neutral-300 flex flex-col justify-center pb-16'>
-  <h2 class='text-center text-neutral-200 text-xl my-10'>My <span class='highlight-tools relative z-10 text-2xl font-black'>Toolset</span></h2>
+  <h3 class='text-center text-neutral-200 text-xl my-10'>My <span class='highlight-tools relative z-10 text-2xl font-black'>Toolset</span></h3>
   <div class='mx-auto text-center'>
     <p class='font-thin mx-6 text-sm tracking-widest'>Front-end development</p>
     <div class='grid ml-0 p-4 grid-cols-8 gap-5 grey-filtered'>
