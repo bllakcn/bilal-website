@@ -2,7 +2,7 @@
   export let scrolled: boolean;
 </script>
 
-<aside class:scrolled class="text-stone-400 fixed right-0 text-right p-5 pr-3 lg:block">
+<aside class:scrolled class="text-stone-400 fixed right-0 text-right p-5 pr-3 hidden lg:block z-10">
   <ul class="mr-5 text-xs leading-loose tracking-wider font-medium">
     <li><a href="#about">About</a></li>
     <li><a href="#toolset">Toolset</a></li>
@@ -30,7 +30,7 @@
   }
   aside.scrolled{
     visibility: visible;
-    opacity: .5;
+    opacity: .6;
     padding: .5rem auto;
   }
   aside.scrolled ul {
