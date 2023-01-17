@@ -1,19 +1,8 @@
 <script lang="ts">
-  let y: number;
-  let scrolled: boolean = false;
-
-  $: {
-    if(y > 100){
-        scrolled = true;
-      } else {
-        scrolled = false;
-      }
-  }
-  
+  export let scrolled: boolean;
 </script>
 
-<svelte:window bind:scrollY={y}/>
-<aside class:scrolled class="text-stone-400 fixed right-0 text-right p-5 pr-3 hidden lg:block">
+<aside class:scrolled class="text-stone-400 fixed right-0 text-right p-5 pr-3 lg:block">
   <ul class="mr-5 text-xs leading-loose tracking-wider font-medium">
     <li><a href="#about">About</a></li>
     <li><a href="#toolset">Toolset</a></li>
@@ -35,10 +24,12 @@
 <style>
   aside {
     transition: all .5s;
-
     direction: rtl;
+    visibility: hidden;
+    opacity: 0;
   }
   aside.scrolled{
+    visibility: visible;
     opacity: .5;
     padding: .5rem auto;
   }
