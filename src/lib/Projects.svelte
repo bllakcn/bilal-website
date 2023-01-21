@@ -13,7 +13,6 @@
       <a href={project.link} target="_blank" rel="noreferrer">
         <span  class="font-extralight text-2xl bg-stone-400 hover:bg-stone-300 text-black w-14 h-14 rounded-lg flex justify-center items-center">{project.name}</span>
       </a>
-      <div>Hey</div>
     </button>
     {/each}
   </div>

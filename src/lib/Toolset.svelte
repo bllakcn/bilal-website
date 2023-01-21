@@ -1,10 +1,11 @@
 <script>
   import reactlogo from './assets/react.png'
   import sveltelogo from './assets/svelte.png'
-  import vuelogo from './assets/vue.png'
+  // import vuelogo from './assets/vue.png'
   import htmllogo from './assets/html.png'
   import csslogo from './assets/css.png'
   import jslogo from './assets/js.png'
+  import typescriptlogo from './assets/typescript.png'
   import tailwindlogo from './assets/tailwind.png'
   import pslogo from './assets/ps.png'
   import ailogo from './assets/ai.png'
@@ -17,11 +18,12 @@
   {name:htmllogo, id:1},
   {name:csslogo, id:2},
   {name:jslogo, id:3},
-  {name:reactlogo, id:4},
-  {name:sveltelogo, id:5},
-  {name:vuelogo, id:6},
-  {name:sasslogo, id:7},
-  {name:tailwindlogo, id:8}
+  {name:typescriptlogo, id:4},
+  {name:reactlogo, id:5},
+  {name:sveltelogo, id:6},
+  // {name:vuelogo, id:7},
+  {name:sasslogo, id:8},
+  {name:tailwindlogo, id:9}
 ]
 const contentSkills = [
   {name:pslogo, id:1},
@@ -36,7 +38,7 @@ const contentSkills = [
   <h3 class='text-center text-neutral-200 text-xl my-10'>My <span class='highlight-tools relative z-10 text-2xl font-black'>Toolset</span></h3>
   <div class='mx-auto text-center'>
     <p class='font-thin mx-6 text-sm tracking-widest'>Front-end development</p>
-    <div class='grid ml-0 p-4 grid-cols-8 gap-5 grey-filtered'>
+    <div class='grid ml-0 p-4 grid-cols-4 justify-center md:grid-cols-9 gap-5 grey-filtered'>
       {#each frontSkills as frontSkill (frontSkill.id)}
         <img class="w-12"src={frontSkill.name} alt={frontSkill.name}>
       {/each}

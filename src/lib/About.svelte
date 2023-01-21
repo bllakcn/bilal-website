@@ -4,7 +4,6 @@
   <div class='z-10 text-center w-11/12 mx-auto max-w-lg'>
     <p><b>Architecture</b> graduate freelancing in <b>tech</b>. Passionate about <b>designing</b> and <b>developing</b> that great <b class='underline decoration-wavy'>user experience</b>.</p>
   </div>
-  <!-- <Link className='z-10 mt-5 underline-btn' to='/projects'>Take a look at the projects</Link> -->
 </section>
 
 <style>
@@ -31,31 +30,5 @@
   text-decoration-skip-ink: none;
   text-decoration-thickness: .1em;
   text-decoration-color: rgba(6, 182, 212,.9);
-}
-.underline-btn {
-  position: relative;
-  font-weight: 500;
-}
-.underline-btn::after {
-  content: '';
-  position: absolute;
-  width: 2px;
-  height: 1px;
-  background-color: rgb(212 212 212);
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%);
-  transition: all 250ms;
-}
-.underline-btn:hover::after {
-  content: '';
-  position: absolute;
-  width: 200px;
-  height: 1px;
-  background-color: rgb(212 212 212);
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%);
-  animation: hoverUnderline 200ms;
 }
 </style>
