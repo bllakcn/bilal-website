@@ -7,15 +7,6 @@
 </section>
 
 <style>
-  @keyframes hoverUnderline {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 200px;
-  }
-}
-
 .highlight-about::before{
   content: '';
   width: 70px;
