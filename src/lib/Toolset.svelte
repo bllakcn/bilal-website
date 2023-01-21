@@ -1,7 +1,6 @@
 <script>
   import reactlogo from './assets/react.png'
   import sveltelogo from './assets/svelte.png'
-  // import vuelogo from './assets/vue.png'
   import htmllogo from './assets/html.png'
   import csslogo from './assets/css.png'
   import jslogo from './assets/js.png'
@@ -15,22 +14,21 @@
   import sasslogo from './assets/sass.png'
 
   const frontSkills = [
-  {name:htmllogo, id:1},
-  {name:csslogo, id:2},
-  {name:jslogo, id:3},
-  {name:typescriptlogo, id:4},
-  {name:reactlogo, id:5},
-  {name:sveltelogo, id:6},
-  // {name:vuelogo, id:7},
-  {name:sasslogo, id:8},
-  {name:tailwindlogo, id:9}
+  {logo:htmllogo, name:'HTML', id:1},
+  {logo:csslogo, name:'CSS', id:2},
+  {logo:jslogo, name:'Javascript', id:3},
+  {logo:typescriptlogo, name:'TypeScript', id:4},
+  {logo:reactlogo, name:'React', id:5},
+  {logo:sveltelogo, name:'Svelte', id:6},
+  {logo:sasslogo, name:'Sass', id:7},
+  {logo:tailwindlogo, name:'Tailwindcss', id:8}
 ]
 const contentSkills = [
-  {name:pslogo, id:1},
-  {name:ailogo, id:2},
-  {name:xdlogo, id:3},
-  {name:lrlogo, id:4},
-  {name:splinelogo, id:5}
+  {logo:pslogo, name:'Adobe Photoshop', id:1},
+  {logo:ailogo, name:'Adobe Illustrator', id:2},
+  {logo:xdlogo, name:'Adobe Xd', id:3},
+  {logo:lrlogo, name:'Adobe Lightroom', id:4},
+  {logo:splinelogo, name:'Spine', id:5}
 ]
 </script>
 
@@ -38,9 +36,9 @@ const contentSkills = [
   <h3 class='text-center text-neutral-200 text-xl my-10'>My <span class='highlight-tools relative z-10 text-2xl font-black'>Toolset</span></h3>
   <div class='mx-auto text-center'>
     <p class='font-thin mx-6 text-sm tracking-widest'>Front-end development</p>
-    <div class='grid ml-0 p-4 grid-cols-4 justify-center md:grid-cols-9 gap-5 grey-filtered'>
+    <div class='grid ml-0 p-4 grid-cols-4 justify-center md:grid-cols-8 gap-5 grey-filtered'>
       {#each frontSkills as frontSkill (frontSkill.id)}
-        <img class="w-12"src={frontSkill.name} alt={frontSkill.name}>
+        <img title={frontSkill.name} class="w-12"src={frontSkill.logo} alt={frontSkill.name}>
       {/each}
     </div>
   </div>
@@ -48,7 +46,7 @@ const contentSkills = [
     <p class='font-thin mx-6 text-sm tracking-widest'>Content Creation</p>
     <div class='grid ml-0 p-4 grid-cols-5 gap-5 grey-filtered'>
       {#each contentSkills as contentSkill (contentSkill.id)}
-      <img class="w-12"src={contentSkill.name} alt={contentSkill.name}>
+      <img title={contentSkill.name} class="w-12"src={contentSkill.logo} alt={contentSkill.name}>
     {/each}
     </div>
   </div>
