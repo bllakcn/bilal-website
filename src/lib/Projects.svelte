@@ -20,7 +20,7 @@
 </script>
 
 <section id="projects">
-  <h3 class='text-center text-neutral-200 text-xl my-10'>My <span class='highlight-tools relative z-10 text-2xl font-black'>Projects</span></h3>
+  <h3 class='text-center text-neutral-200 text-xl my-10'>My <span class='highlight-projects relative z-10 text-2xl font-black'>Projects</span></h3>
   <div class="flex flex-col sm:flex-row gap-5 justify-center items-left mx-auto max-w-xs sm:max-w-max">
     {#each projects as project (project.id)}
     <button style="--bg-color:{project.bgColor}" class="hover:bg-stone-800 transition-all rounded-lg p-2">
@@ -37,7 +37,7 @@
 </section>
 
 <style>
-  .highlight-tools::before{
+  .highlight-projects::before{
   content: '';
   width: 110px;
   height: 20px;
