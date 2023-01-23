@@ -1,4 +1,4 @@
-<main class="bg-black text-stone-400 flex justify-center items-center">
+<main class="bg-black text-neutral-400 flex justify-center items-center">
   <h1 class="text-center text-neutral-200 text-xl my-10 font-mono">404 <span class="highlight-error relative z-10 text-2xl">not found</span></h1>
 </main>
 
