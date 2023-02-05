@@ -52,7 +52,7 @@
   </main>
   <Navbar scrolled={scrolled} />
   <footer class="text-center text-neutral-500 select-none">
-    <span>© 2022 Ahmet Bilal Akcan</span>
+    <span>© 2023 Ahmet Bilal Akcan</span>
   </footer>
 </div>
 
